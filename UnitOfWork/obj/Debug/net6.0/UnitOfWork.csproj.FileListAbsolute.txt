@@ -1,0 +1,17 @@
+C:\Users\rahman.p\source\repos\BankClonedProject\UnitOfWork\bin\Debug\net6.0\UnitOfWork.deps.json
+C:\Users\rahman.p\source\repos\BankClonedProject\UnitOfWork\bin\Debug\net6.0\UnitOfWork.dll
+C:\Users\rahman.p\source\repos\BankClonedProject\UnitOfWork\bin\Debug\net6.0\UnitOfWork.pdb
+C:\Users\rahman.p\source\repos\BankClonedProject\UnitOfWork\bin\Debug\net6.0\Entities.dll
+C:\Users\rahman.p\source\repos\BankClonedProject\UnitOfWork\bin\Debug\net6.0\RepositoryLayer.dll
+C:\Users\rahman.p\source\repos\BankClonedProject\UnitOfWork\bin\Debug\net6.0\RepositoryLayer.pdb
+C:\Users\rahman.p\source\repos\BankClonedProject\UnitOfWork\bin\Debug\net6.0\Entities.pdb
+C:\Users\rahman.p\source\repos\BankClonedProject\UnitOfWork\obj\Debug\net6.0\UnitOfWork.csproj.AssemblyReference.cache
+C:\Users\rahman.p\source\repos\BankClonedProject\UnitOfWork\obj\Debug\net6.0\UnitOfWork.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rahman.p\source\repos\BankClonedProject\UnitOfWork\obj\Debug\net6.0\UnitOfWork.AssemblyInfoInputs.cache
+C:\Users\rahman.p\source\repos\BankClonedProject\UnitOfWork\obj\Debug\net6.0\UnitOfWork.AssemblyInfo.cs
+C:\Users\rahman.p\source\repos\BankClonedProject\UnitOfWork\obj\Debug\net6.0\UnitOfWork.csproj.CoreCompileInputs.cache
+C:\Users\rahman.p\source\repos\BankClonedProject\UnitOfWork\obj\Debug\net6.0\UnitOfWork.csproj.CopyComplete
+C:\Users\rahman.p\source\repos\BankClonedProject\UnitOfWork\obj\Debug\net6.0\UnitOfWork.dll
+C:\Users\rahman.p\source\repos\BankClonedProject\UnitOfWork\obj\Debug\net6.0\refint\UnitOfWork.dll
+C:\Users\rahman.p\source\repos\BankClonedProject\UnitOfWork\obj\Debug\net6.0\UnitOfWork.pdb
+C:\Users\rahman.p\source\repos\BankClonedProject\UnitOfWork\obj\Debug\net6.0\ref\UnitOfWork.dll
