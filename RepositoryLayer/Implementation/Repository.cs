@@ -13,48 +13,47 @@ namespace RepositoryLayer.Implementation
 {
     public class Repository<T> : IRepository<T> where T : class
     {
-        private readonly BankContext _context;
-        private DbSet<T> _dbSet ;
+        private readonly BankContext _bankcontext;
+        private DbSet<T> _banktableSet ;
         public Repository(BankContext bankContext)
         {
-            _context = bankContext;
-            _dbSet = _context.Set<T>();
+            _bankcontext = bankContext;
+            _banktableSet = _bankcontext.Set<T>();
         }
         public async Task<IEnumerable<T>> Get()
         {
-            return await _dbSet.ToListAsync();
+            return await _banktableSet.ToListAsync();
         }
 
         public async Task<T> GetById(int id)
         {
-            return await _dbSet.FindAsync(id);
+            return await _banktableSet.FindAsync(id);
         }
 
         public void Insert(T entity)
         {
-            _dbSet.Add(entity);
-            _context.SaveChanges();
-            
+            _banktableSet.Add(entity);
+            _bankcontext.SaveChanges();       
         }
         public void Update(T entity)
         {
-            _dbSet.Attach(entity);
-            _context.Entry(entity).State = EntityState.Modified;
-            _context.SaveChanges();
+            _banktableSet.Attach(entity);
+            _bankcontext.Entry(entity).State = EntityState.Modified;
+            _bankcontext.SaveChanges();
         }
         public void Delete(int id)
         {
-            T existing = _dbSet.Find(id);
+            T existing = _banktableSet.Find(id);
             if(existing == null)
             {
                 throw new KeyNotFoundException();
             }
-            _dbSet.Remove(existing);
-            _context.SaveChanges();
+            _banktableSet.Remove(existing);
+            _bankcontext.SaveChanges();
         }
         public void Save()
         {
-            _context.SaveChanges();
+            _bankcontext.SaveChanges();
         }
 
 

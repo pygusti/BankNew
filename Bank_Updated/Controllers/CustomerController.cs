@@ -12,6 +12,7 @@ using RepositoryLayer.Interface;
 using UnitOfWork.Interfaces;
 using RepositoryLayer.Implementation;
 using BankLayer.Implementaion;
+using BankLayer.Interface;
 
 namespace Bank_Updated.Controllers
 {
@@ -20,23 +21,23 @@ namespace Bank_Updated.Controllers
     [ApiController]
     public class CustomerController : ControllerBase
     {
-        private readonly CustomerBusinessLayer businessLogic;
-        public CustomerController(CustomerBusinessLayer businessLogic) 
+        private readonly ICustomerBusinessLogic customerbusinessLogic;
+        public CustomerController(ICustomerBusinessLogic businessLogic) 
         { 
-            this.businessLogic = businessLogic;
+            this.customerbusinessLogic = businessLogic;
         }
       
         // GET: api/Login
         [HttpGet]
         public async Task<IEnumerable<UserModel>> GetAll()
         {
-            return await businessLogic.GetAll();
+            return await customerbusinessLogic.GetAll();
         }
      
         [HttpGet("{id}")]
         public async Task<UserModel> GetByID(int id)
         {
-            return await businessLogic.GetByID(id);
+            return await customerbusinessLogic.GetByID(id);
         }
        
         // POST: api/Login
@@ -44,20 +45,20 @@ namespace Bank_Updated.Controllers
         [HttpPost]
         public IActionResult Insert(UserModel user)
         {
-            return businessLogic.Insert(user);
+            return customerbusinessLogic.Insert(user);
         }
 
         // DELETE: api/Login/5
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
-           businessLogic?.Delete(id);
+            customerbusinessLogic?.Delete(id);
         }
        
         [HttpPut("{id}")]
         public IActionResult Put(UserModel user)
         {
-           return businessLogic.Put(user);    
+           return customerbusinessLogic.Put(user);    
         }      
       
     }

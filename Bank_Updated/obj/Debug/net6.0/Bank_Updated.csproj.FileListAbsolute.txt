@@ -588,3 +588,4 @@ C:\Users\rahman.p\source\repos\BankClonedProject\Bank_Updated\bin\Debug\net6.0\U
 C:\Users\rahman.p\source\repos\BankClonedProject\Bank_Updated\bin\Debug\net6.0\UnitOfWork.pdb
 C:\Users\rahman.p\source\repos\BankClonedProject\Bank_Updated\bin\Debug\net6.0\BankLayer.dll
 C:\Users\rahman.p\source\repos\BankClonedProject\Bank_Updated\bin\Debug\net6.0\BankLayer.pdb
+C:\Users\rahman.p\source\repos\BankClonedProject\Bank_Updated\obj\Debug\net6.0\Bank_Updated.MvcApplicationPartsAssemblyInfo.cs

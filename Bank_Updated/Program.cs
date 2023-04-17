@@ -7,6 +7,8 @@ using Entities.Models;
 using RepositoryLayer.Interface;
 using RepositoryLayer.Implementation;
 using UnitOfWork.Interfaces;
+using BankLayer.Interface;
+using BankLayer.Implementaion;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -44,6 +46,7 @@ builder.Services.AddAuthentication(options =>
 
 //adding repository layer services
 builder.Services.AddTransient(typeof(IRepository<>), typeof(Repository<>));
+builder.Services.AddScoped<ICustomerBusinessLogic, CustomerBusinessLayer>();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

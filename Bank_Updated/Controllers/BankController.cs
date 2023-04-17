@@ -18,8 +18,16 @@ namespace Bank_Updated.Controllers
 
         public IActionResult GetCustomerTransactions([FromQuery] int count)
         {
-            var CustomerBalance = _unitOfWork.customerRepository.CustomerTransaction(count);
-            return Ok(CustomerBalance);
+            try
+            {
+                var CustomerBalance = _unitOfWork.customerRepository.CustomerTransaction(count);
+                return Ok(CustomerBalance);
+            }
+            catch (Exception ex) 
+            {
+                return BadRequest(ex);
+            }
+            
         }
 
 

@@ -15,13 +15,13 @@ namespace Bank_Updated.Controllers
     [ApiController]
     public class LoginController : ControllerBase
     {
-        private readonly BankContext _context;
+        private readonly BankContext _bankcontext;
 
         private readonly IConfiguration _config;
 
         public LoginController(BankContext context, IConfiguration config)
         {
-            _context = context;
+            _bankcontext = context;
             _config = config;
         }
         // GET: api/<LoginController>
@@ -29,9 +29,10 @@ namespace Bank_Updated.Controllers
         [HttpPost]
         public async Task<IActionResult> Login(LoginModel loginmodel)
         {
+            var token="";
             try
             {
-               var tempUser = _context.userModels.FirstOrDefault(u => u.Email == loginmodel.Email && u.Password == loginmodel.Password);
+               var tempUser = _bankcontext.userModels.FirstOrDefault(u => u.Email == loginmodel.Email && u.Password == loginmodel.Password);
 
 
                 if (tempUser == null)
@@ -40,7 +41,14 @@ namespace Bank_Updated.Controllers
                 }
                 else
                 {
-                    var token = GenerateToken(tempUser);
+                    try
+                    {
+                        token = GenerateToken(tempUser);
+                    }
+                    catch (Exception ex)
+                    {
+                        BadRequest(ex.Message);
+                    }
                     return Ok(token);
                 }
             }
@@ -60,14 +68,16 @@ namespace Bank_Updated.Controllers
             };
         
             var authSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["JWT:Secret"]));
-           
-            var token = new JwtSecurityToken(
-                    issuer: _config["JWT:ValidIssuer"],
-                    audience: _config["JWT:ValidAudience"],
-                    expires: DateTime.Now.AddHours(3),
-                    claims: claims,
-                    signingCredentials: new SigningCredentials(authSigningKey, SecurityAlgorithms.HmacSha256)
-                    );
+
+              var  token = new JwtSecurityToken(
+                        issuer: _config["JWT:ValidIssuer"],
+                        audience: _config["JWT:ValidAudience"],
+                        expires: DateTime.Now.AddHours(3),
+                        claims: claims,
+                        signingCredentials: new SigningCredentials(authSigningKey, SecurityAlgorithms.HmacSha256)
+                        );
+
+
             return new JwtSecurityTokenHandler().WriteToken(token);
 
 
