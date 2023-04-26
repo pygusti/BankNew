@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "BQH3q/2b/1Q7AaK8PB8Sgq3b3sSM7Emzspwa7Cq4dK49jUCukDXUHzAnbuVHPH/9vF6AdcYDHrxgU8zASxpveA==",
+  "dgSpecHash": "VOla1rPpRRr3QTB21XpdkNPmHCg876nLMoFinrPw3DrwaVTXgKw/hVRyyuGQhZ/Q0Zzn7hoVohEujdxTcjoOKQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\rahman.p\\source\\repos\\BankClonedProject\\Bank_Updated\\Bank_Updated.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\rahman.p\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\rahman.p\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\rahman.p\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\rahman.p\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\rahman.p\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
@@ -46,7 +48,7 @@
     "C:\\Users\\rahman.p\\.nuget\\packages\\microsoft.codeanalysis.visualbasic.workspaces\\4.0.0\\microsoft.codeanalysis.visualbasic.workspaces.4.0.0.nupkg.sha512",
     "C:\\Users\\rahman.p\\.nuget\\packages\\microsoft.codeanalysis.workspaces.common\\4.0.0\\microsoft.codeanalysis.workspaces.common.4.0.0.nupkg.sha512",
     "C:\\Users\\rahman.p\\.nuget\\packages\\microsoft.codeanalysis.workspaces.msbuild\\4.0.0\\microsoft.codeanalysis.workspaces.msbuild.4.0.0.nupkg.sha512",
-    "C:\\Users\\rahman.p\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\rahman.p\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\rahman.p\\.nuget\\packages\\microsoft.data.sqlclient\\5.0.1\\microsoft.data.sqlclient.5.0.1.nupkg.sha512",
     "C:\\Users\\rahman.p\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\5.0.1\\microsoft.data.sqlclient.sni.runtime.5.0.1.nupkg.sha512",
     "C:\\Users\\rahman.p\\.nuget\\packages\\microsoft.diasymreader\\1.3.0\\microsoft.diasymreader.1.3.0.nupkg.sha512",

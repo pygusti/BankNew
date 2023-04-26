@@ -59,7 +59,7 @@ namespace Bank_Updated.Controllers
         public IActionResult Put(UserModel user)
         {
            return customerbusinessLogic.Put(user);    
-        }      
-      
+        }
+
     }
 }

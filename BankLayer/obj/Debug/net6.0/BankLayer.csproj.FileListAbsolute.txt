@@ -17,3 +17,5 @@ C:\Users\rahman.p\source\repos\BankClonedProject\BankLayer\obj\Debug\net6.0\Bank
 C:\Users\rahman.p\source\repos\BankClonedProject\BankLayer\obj\Debug\net6.0\refint\BankLayer.dll
 C:\Users\rahman.p\source\repos\BankClonedProject\BankLayer\obj\Debug\net6.0\BankLayer.pdb
 C:\Users\rahman.p\source\repos\BankClonedProject\BankLayer\obj\Debug\net6.0\ref\BankLayer.dll
+C:\Users\rahman.p\source\repos\BankClonedProject\BankLayer\bin\Debug\net6.0\ViewModels.dll
+C:\Users\rahman.p\source\repos\BankClonedProject\BankLayer\bin\Debug\net6.0\ViewModels.pdb

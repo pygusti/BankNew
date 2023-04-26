@@ -30,6 +30,9 @@
             "projectReferences": {
               "C:\\Users\\rahman.p\\source\\repos\\BankClonedProject\\UnitOfWork\\UnitOfWork.csproj": {
                 "projectPath": "C:\\Users\\rahman.p\\source\\repos\\BankClonedProject\\UnitOfWork\\UnitOfWork.csproj"
+              },
+              "C:\\Users\\rahman.p\\source\\repos\\BankClonedProject\\ViewModels\\ViewModels.csproj": {
+                "projectPath": "C:\\Users\\rahman.p\\source\\repos\\BankClonedProject\\ViewModels\\ViewModels.csproj"
               }
             }
           }
@@ -43,6 +46,16 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -99,6 +112,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.4, )"
@@ -166,6 +187,9 @@
             "projectReferences": {
               "C:\\Users\\rahman.p\\source\\repos\\BankClonedProject\\Entities\\Entities.csproj": {
                 "projectPath": "C:\\Users\\rahman.p\\source\\repos\\BankClonedProject\\Entities\\Entities.csproj"
+              },
+              "C:\\Users\\rahman.p\\source\\repos\\BankClonedProject\\ViewModels\\ViewModels.csproj": {
+                "projectPath": "C:\\Users\\rahman.p\\source\\repos\\BankClonedProject\\ViewModels\\ViewModels.csproj"
               }
             }
           }
@@ -180,6 +204,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
             "Microsoft.AspNetCore.Mvc.Core": {
               "target": "Package",
               "version": "[2.2.5, )"
@@ -244,6 +276,81 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\rahman.p\\source\\repos\\BankClonedProject\\ViewModels\\ViewModels.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\rahman.p\\source\\repos\\BankClonedProject\\ViewModels\\ViewModels.csproj",
+        "projectName": "ViewModels",
+        "projectPath": "C:\\Users\\rahman.p\\source\\repos\\BankClonedProject\\ViewModels\\ViewModels.csproj",
+        "packagesPath": "C:\\Users\\rahman.p\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\rahman.p\\source\\repos\\BankClonedProject\\ViewModels\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\rahman.p\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

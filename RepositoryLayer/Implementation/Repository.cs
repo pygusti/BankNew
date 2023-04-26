@@ -1,4 +1,5 @@
-﻿using Entities.Models;
+﻿using AutoMapper;
+using Entities.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
@@ -14,7 +15,7 @@ namespace RepositoryLayer.Implementation
     public class Repository<T> : IRepository<T> where T : class
     {
         private readonly BankContext _bankcontext;
-        private DbSet<T> _banktableSet ;
+        private DbSet<T> _banktableSet;
         public Repository(BankContext bankContext)
         {
             _bankcontext = bankContext;
@@ -22,6 +23,7 @@ namespace RepositoryLayer.Implementation
         }
         public async Task<IEnumerable<T>> Get()
         {
+            await _banktableSet.ToListAsync();
             return await _banktableSet.ToListAsync();
         }
 

@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RepositoryLayer", "Reposito
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitOfWork", "UnitOfWork\UnitOfWork.csproj", "{18835C46-BDB1-4831-8D66-4913543BD3E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankLayer", "BankLayer\BankLayer.csproj", "{62FFFB3C-DE60-4CB5-B381-99DD65BC9BB3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankLayer", "BankLayer\BankLayer.csproj", "{62FFFB3C-DE60-4CB5-B381-99DD65BC9BB3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewModels", "ViewModels\ViewModels.csproj", "{91491EE4-602D-44B5-87F7-5F6AD145375C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{62FFFB3C-DE60-4CB5-B381-99DD65BC9BB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{62FFFB3C-DE60-4CB5-B381-99DD65BC9BB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{62FFFB3C-DE60-4CB5-B381-99DD65BC9BB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91491EE4-602D-44B5-87F7-5F6AD145375C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91491EE4-602D-44B5-87F7-5F6AD145375C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91491EE4-602D-44B5-87F7-5F6AD145375C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91491EE4-602D-44B5-87F7-5F6AD145375C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

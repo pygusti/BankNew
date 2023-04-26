@@ -8,7 +8,8 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using UnitOfWork.Interfaces;
-
+////this layer is business middle layer where we are injecting unit of work  
+///by using  unit of work we are calling instances of repositories i.e (UserRepository)
 namespace BankLayer.Implementaion
 {
     
